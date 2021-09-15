@@ -8,7 +8,7 @@ metadata:
     app: fedco-devcentral-app-local
   annotations:
     fluxcd.io/automated: "true"    
-    fluxcd.io/tag.fedco-devcentral-app: semver:~1.1
+    fluxcd.io/tag.fedco-devcentral: semver:~1.1
 spec:
   strategy:
     rollingUpdate:
@@ -25,7 +25,7 @@ spec:
         app: fedco-devcentral-app-local
     spec:
       containers:
-      - name: fedco-devcentral-app
+      - name: fedco-devcentral
         image: sagark24/fedco-app:1.1.1
         ports:
           - containerPort: 3000
