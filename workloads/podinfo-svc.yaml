@@ -2,6 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: fedco-devcentral-app-local
+  namespace: fedco
 spec:
   selector:
     app: fedco-devcentral-app-local
