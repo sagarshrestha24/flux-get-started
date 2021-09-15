@@ -19,3 +19,4 @@ data:
 kind: ConfigMap
 metadata:
   name: local-configmap
+  namespace: fedco
